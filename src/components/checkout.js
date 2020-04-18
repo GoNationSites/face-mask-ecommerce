@@ -22,6 +22,7 @@ const redirectToCheckout = async event => {
     items: [{ sku: process.env.GATSBY_BUTTON_SKU_ID, quantity: 1 }],
     successUrl: `${window.location.origin}/page-2/`,
     cancelUrl: `${window.location.origin}/`,
+    billingAddressCollection: 'required',
   })
 
   if (error) {

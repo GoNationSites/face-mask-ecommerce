@@ -46,6 +46,7 @@ const SkuCard = ({ sku, stripePromise }) => {
       items: [{ sku, quantity }],
       successUrl: `${window.location.origin}/page-2/`,
       cancelUrl: `${window.location.origin}/advanced`,
+      billingAddressCollection: 'required',
     })
 
     if (error) {
