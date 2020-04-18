@@ -34,6 +34,10 @@ const formatPrice = (amount, currency) => {
   return numberFormat.format(price)
 }
 
+const cardImage = {
+  display: 'block',
+}
+
 const SkuCard = ({ sku, stripePromise }) => {
   const redirectToCheckout = async (event, sku, quantity = 1) => {
     event.preventDefault()
@@ -51,9 +55,9 @@ const SkuCard = ({ sku, stripePromise }) => {
 
   return (
     <div style={cardStyles}>
-      {/* <div style={cardImage}>
-        <img src="{}" alt="" />
-      </div> */}
+      <div style={cardImage}>
+        <img src={sku.image} alt={sku.attributes.name} />
+      </div>
       <h4>{sku.attributes.name}</h4>
       <p>Price: {formatPrice(sku.price, sku.currency)}</p>
       <button
