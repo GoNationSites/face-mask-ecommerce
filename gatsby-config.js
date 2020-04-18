@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Purchase Face Masks`,
+    title: `Covid-19 Crisis Masks`,
     description: `A site for CT residents to buy face masks for the covid-19 crisis.`,
     author: `@GoNationSites`,
   },
