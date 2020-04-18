@@ -27,6 +27,7 @@ const Skus = () => {
                 attributes {
                   name
                 }
+                image
               }
             }
           }

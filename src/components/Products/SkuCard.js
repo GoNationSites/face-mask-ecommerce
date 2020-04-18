@@ -51,6 +51,9 @@ const SkuCard = ({ sku, stripePromise }) => {
 
   return (
     <div style={cardStyles}>
+      {/* <div style={cardImage}>
+        <img src="{}" alt="" />
+      </div> */}
       <h4>{sku.attributes.name}</h4>
       <p>Price: {formatPrice(sku.price, sku.currency)}</p>
       <button
